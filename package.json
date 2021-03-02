@@ -1,5 +1,5 @@
 {
-  "name": "with-electron",
+  "name": "instagram-bot-electron",
   "productName": "ElectronNext",
   "version": "1.0.0",
   "main": "main/index.js",

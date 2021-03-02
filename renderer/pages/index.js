@@ -3,6 +3,7 @@ function App() {
   function start(e) {
     e.preventDefault();
     console.log('O link foi clicado.');
+    ipcRenderer.send('asynchronous-message', true)
   }
   return (
     <div>
