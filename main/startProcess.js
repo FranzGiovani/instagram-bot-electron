@@ -2,7 +2,7 @@ const { ipcMain } = require('electron')
 const pie = require('puppeteer-in-electron')
 
 const exchangeClass = require('./controller/ exchangeClass')
-const calculation = require('./controller/calculation')
+const Calculation = require('./controller/calculation')
 const goDown = require('./controller/goDown')
 const goLocalInPage = require('./controller/goLocalInPage')
 const sizePage = require('./controller/sizePage')
@@ -27,7 +27,7 @@ const startProcess = async function (browser, window, url) {
                         let numberPhotos = await takesArraySize(page); //pega o tamanho do array de fotos
                         await console.log("o numero de fotos = " + numberPhotos);
                         await event.sender.send('asynchronous-message', 'são ' + numberPhotos + " fotos")
-                        let calculation = await calculation(size); //calcula informações reverentes ao tamanho da pagina 
+                        let calculation = await Calculation(size); //calcula informações reverentes ao tamanho da pagina 
                         await console.log(calculation);
                         await page.goto(url);
 

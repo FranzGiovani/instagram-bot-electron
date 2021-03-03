@@ -1,4 +1,4 @@
-const calculation = function  (size) {
+const Calculation = function  (size) {
 
     let base = 1000;
 
@@ -8,10 +8,16 @@ const calculation = function  (size) {
     let rest = pageSize % base;
     let roundTotal = pageSize - rest;
 
-    let calculation = [pageSize, division, round, rest, roundTotal]
+    let calculation = {
+        pageSize,
+         division, 
+         round, 
+         rest:rest, 
+         roundTotal
+    }
 
     return calculation
 
 }
 
-module.exports = calculation;
+module.exports = Calculation;
