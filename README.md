@@ -2,6 +2,7 @@
 
 Utilizando:
 
+Electron 
 Javascript
 NextJs
 React
@@ -9,4 +10,9 @@ Puppeteer
 
 Pretendo fazer bot que curta fotos automaticamente no Instagram.
 
-# instagram-bot-electron
+## Projeto não Finalizado 
+
+```
+npm install
+npm start
+```
